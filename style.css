@@ -5,8 +5,7 @@
 .dashboard{
     height: 100vh;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    justify-content: center;
     font: 12px Arial, Helvetica, sans-serif;
     background-color: whitesmoke;
 }
@@ -14,16 +13,20 @@
     color: white; 
     padding: 10px;
     border-radius: 45px;
-    background-color: #222222;
+    background-color: #22222256;
+    display: flex;
+    margin: 20px;
 }
 
 #date{
     font-size: 20px !important;
     color: grey;
     text-align: center;
+    margin-left: 60px;
 }
 #time{
     list-style: none;
+    align-items: center;
     display:flex;
     font-size: 20px;
     font: bold;
