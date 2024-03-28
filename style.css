@@ -9,7 +9,7 @@
     height: 100vh;
     font: 12px Arial, Helvetica, sans-serif;
     display: grid;
-    background: url(/assets/background.jpg);
+    background: url(/assets/background3.png);
     grid-template-columns: 260px 1fr 1fr 1fr; 
     grid-template-rows: 0.2fr 3fr;
     grid-template-areas: 
@@ -32,6 +32,7 @@
     padding: 10px;
     border-radius: 45px;
     background-color: #22222221;
+    backdrop-filter: blur(25px);
     display: flex;
     margin: 20px;
     padding: 10px 80px 10px 80px;
@@ -71,7 +72,8 @@
     height: 30vh;
     padding: 25px;
     color: rgb(255, 255, 255);
-    backdrop-filter: blur(70px);
+    background-color: #22222221;
+    backdrop-filter: blur(25px);
     border-radius: 25px;
     box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
 }
@@ -92,6 +94,43 @@
     align-items: center;
     justify-content: space-between;
 }
-.card_inner > span{
-    font-size: 50px;
+.links{
+    display: flex;
+
 }
+.card-inner ul{
+    list-style: none;
+    font-size: 40px;
+    text-decoration: none;
+    
+}
+.card-inner ul li{
+    background-color: #22222221;
+    backdrop-filter: blur(25px);
+    border-radius: 25px;
+    color: white;
+    margin: 10px;
+    
+}
+a:link {
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+  
