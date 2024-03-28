@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.dashboard{
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font: 12px Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+.clock{
+    color: white; 
+    padding: 10px;
+    border-radius: 45px;
+    background-color: #222222;
+}
+
+#date{
+    font-size: 20px !important;
+    color: grey;
+    text-align: center;
+}
+#time{
+    list-style: none;
+    display:flex;
+    font-size: 20px;
+    font: bold;
+    gap: 3px;
+}
+
