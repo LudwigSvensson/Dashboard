@@ -25,42 +25,67 @@
                 <div class="main-title"> <!--Title-->
                     <h1 contenteditable="true">Ludwigs Dashboard</h1>
                 </div><!--End Title-->
-                <main class="main-cards">
+                <main class="main-cards">                   
+                    <!--Link Card-->
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Länkar</h1>                            
+                        </div>
+                            <ul class="link-list"></ul>
+                                <div class="add-link">
+                                    <button id="add-link-btn" class="add-link-btn" href="#popuplink">
+                                        <i class="material-icons-outlined">add</i>Lägg till länk
+                                    </button>
+                                        <div id="popuplink" class="overlay">
+                                            <div class="popup">
+                                                <a class="close" href="#">&times;</a>    
+
+                                                    <label for="popupTitle">Rubrik:</label>
+                                                    <input type="text" id="popupTitle" name="title" required placeholder="Skriv rubrik">
+                                                    <label for="popupURL">URL:</label>
+                                                    <input type="url" id="popupURL" name="url" required placeholder="Skriv URL 'example.com' "> 
+                                                    <button class ="save-link-btn" type="submit" onclick="addLinkFromPopup()"><span class="material-icons-outlined">save</span>Spara länk</button>                                         
+                                            </div>
+                                        </div>
+                              </div>                                            
+                    </div>
+                    <!--End Link Card-->
 
                     <div class="card">
-                        <h1>Länkar</h1>
-                        <div class="card-inner">
-                            <ul>
-                                <li>
-                                    <a href="https://www.google.se/"
-                                    target="blank"
-                                    title="Goes to google">
-                                    <i class="bi bi-google"></i>
-                                    Google
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.se/"
-                                        target="blank"
-                                        title="Goes to Youtube">                                        
-                                        <i class="bi bi-youtube"></i>
-                                        Youtube
-                                    </a>
-                                </li>
-                            </ul>
+                        <div class="card-header">
+                            <h1>Väder</h1>
                         </div>
-                        <h1>test</h1>
-                    </div>
-
-                    <div class="card">
-                        <h1>Väder</h1>
-                        <div class="card-inner">
-                            <h2>test</h2>
-                            <span class="material-icons-outlined">thumb_up</span>
+                        <div class="search">
+                            <input type="text" placeholder="enter city"
+                            spellcheck="false">
+                            <button><span class="material-icons-outlined">search</span></button>
                         </div>
-                        <h1>test</h1>
-                    </div>
+                        <div class="error">
+                            <p>Felaktigt namn</p>
+                        </div>
+                        <div class="weather">
+                            <i id="weather-icon" class="bi bi-cloud-drizzle"></i>
+                            <h1 class="temp">22°C</h1>
+                            <h2 class="city">New York</h2>
+                            <div class="details">
+                                <div class="col">
+                                    <i class="bi bi-moisture"></i>
+                                    <div>
+                                        <p class="humidity">50%</p>
+                                        <p>Humidity</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-wind"></i>
+                                    <div>
+                                        <p class="wind">15 km/h</p>
+                                        <p>Windforce</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        </div>
                     <div class="card">
                         <h1>Oklart</h1>
                         <div class="card-inner">
@@ -71,12 +96,10 @@
                     </div>
 
                     <div class="card">
-                        <h1>Anteckningar</h1>
-                        <div class="card-inner">
-                            <h2>test</h2>
-                            <span class="material-icons-outlined">thumb_up</span>
+                        <div class="card-header">
+                            <h1>Anteckningar</h1>
                         </div>
-                        <h1>test</h1>
+                        <textarea class="textArea" id="textArea" rows="20"></textarea>
                     </div>
                 </main>                     
             </main><!--End Main-->
@@ -85,6 +108,9 @@
             <p></p>
         </footer>
     </div><!--End Dashboard--->
-    <script src="/script.js"></script>
+    <script src="./JavaScript/script.js">
+    </script>
+    <script src="./JavaScript/weatherscript.js"></script>
+    
 </body>
 </html>
