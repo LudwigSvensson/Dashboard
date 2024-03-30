@@ -10,23 +10,46 @@ body{
     background: url(/assets/background3.png);
     background-size: cover;
 }
+
 .material-icons-outlined{
 cursor: pointer;   
 transition: transform 0.3s ease;
+
 }
 
+@-webkit-keyframes shake{
+    from{
+        -webkit-transform: rotate(45deg);
+    }
+    to{
+        -webkit-transform: rotate(-15deg);
+        transform: scale(1.5);
+        -webkit-transform-origin: center center;         
+    }
+}
+@-webkit-keyframes zoom{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+        -webkit-transform-origin: center center;         
+    }
+}
 .material-icons-outlined:hover{
-    transform: scale(1.5); 
+    -webkit-animation: shake .4s ease-in-out .1s infinite alternate;    
 }
-.dashboard{
 
-}
 .header{
-    grid-area: header;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     height: 25vh;
+}
+.footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .clock{
@@ -201,6 +224,25 @@ flex-wrap: wrap;
     border: none;
     cursor: pointer;
     transition: transform 0.3s ease;
+}
+#randomBG{
+    font-size: 20px;
+    margin: 2rem;
+    color: white;
+    border-radius: 25px;
+    background-color: #22222221;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    
+}
+.bi-shuffle:hover{
+    -webkit-animation: zoom .4s ease-in-out .1s infinite alternate;
 }
 .add-link .add-link-btn:hover{
     background-color: #00000041;
