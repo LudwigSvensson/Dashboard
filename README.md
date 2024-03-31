@@ -1,4 +1,4 @@
-# Ludwigs Dashboard
+# Dashboard
 
 Ludwigs Dashboard är en webbapplikation som låter användaren skapa snabba anteckningar och redigera en personlig titel för sitt dashboard.
 
@@ -6,28 +6,28 @@ Ludwigs Dashboard är en webbapplikation som låter användaren skapa snabba ant
 
 - **Anteckningar**: Användaren kan skriva snabba anteckningar i en stor textarea. Anteckningarna sparas automatiskt och återställs när sidan laddas om.
 - **Redigerbar titel**: Användaren kan redigera en personlig titel för sitt dashboard direkt på sidan. Titeln sparas automatiskt och återställs när sidan laddas om.
+-  **Se dagens väder för olika städer runtom i hela världen**: Användaren kan själv söka på valfri stad för att få fram stadens nuvarande väder.
+-  **Surf i läjet**: Användaren kan så fort hen kommer in på sidan se ifall det är överhuvudtaget värt att ge sig ut i läjetsviken idag.
+-  **Spara länkar**: Användaren kan spara upp till 5 länkar.
 
 ## Teknologi
 
 - **HTML**: Sidans struktur och innehåll definieras med HTML.
 - **CSS**: Stilmallar används för att styla sidans utseende och layout.
 - **JavaScript**: Interaktiviteten och funktionaliteten implementeras med JavaScript, inklusive hantering av lokalt lagrade data med hjälp av Local Storage API.
+- **Bootstrap-icons**
+- **Google Fonts** (Montserrat och Nunito Sans)
 
 ## Installation
 
 1. Klona projektet från GitHub-repositoriet.
 2. Öppna `index.html` i en webbläsare.
 
-## Användning
+##Resonemang kring projektet och koden.
+Det finns absoult saker i detta projekt att utveckla vidare. Här är några exempel: 
+- Kunna spara fler än 5 länkar.
+- Kunna se mer än det mest aktuella vädret.
+- Kunna se mer än läjets vågor, eventuellt kunna söka likt man kan göra med städerna och vädret.
+- Kunna skriva in ett sökord när man randomisar backgrundsbild för att kunna välja iallafall tema på backgrundsbilden.
 
-1. Skriv in anteckningar i textarean.
-2. Redigera titeln genom att klicka på den och skriva.
-3. Ändringarna sparas automatiskt och återställs när sidan laddas om.
 
-## Bidrag
-
-Bidrag är välkomna! Om du vill bidra till projektet, öppna en ny pull-förfrågan på GitHub.
-
-## Licens
-
-Det här projektet är licensierat under MIT-licensen. Se `LICENSE`-filen för mer information.
