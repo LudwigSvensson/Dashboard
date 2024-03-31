@@ -23,7 +23,7 @@
         </header> 
             <main class="main-container"> <!--Main-->  
                 <div class="main-title"> <!--Title-->
-                    <h1 contenteditable="true">Ludwigs Dashboard</h1>
+                    <h1 contenteditable="true" id="edit-title">Ludwigs Dashboard</h1>
                 </div><!--End Title-->
                 <main class="main-cards">                   
                     <!--Link Card-->
@@ -72,32 +72,51 @@
                                     <i class="bi bi-moisture"></i>
                                     <div>
                                         <p class="humidity">50%</p>
-                                        <p>Humidity</p>
+                                        <p>Luftfuktighet</p>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <i class="bi bi-wind"></i>
                                     <div>
                                         <p class="wind">15 km/h</p>
-                                        <p>Windforce</p>
+                                        <p>Vind</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <h1>Oklart</h1>
-                        <div class="card-inner">
-                            <h2>test</h2>
-                            <span class="material-icons-outlined">thumb_up</span>
+                        <div class="card-header">
+                            <h1>Surf</h1>
                         </div>
-                        <h1>test</h1>
-                    </div>
+                        <div class="surf-site">
+                            <div class="weather-surf">
+                                <i id="weather-icon" class="bi bi-tsunami"></i>
+                                <h1 class="waveheight">1.9m</h1>
+                                <h2 class="city">Läjet</h2>
+                                <div class="details">
+                                    <div class="col">
+                                        <i class="bi bi-wind"></i>
+                                        <div>
+                                            <p class="wind2" id="surf-wind">15 m/s</p>
+                                            <p>Vind</p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div>
+                                            <p>Vindriktning:</p>
+                                            <p class="wind-direction">5°</p>                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
                     <div class="card">
                         <div class="card-header">
                             <h1>Anteckningar</h1>
                         </div>
-                        <textarea class="textArea" id="textArea" rows="20"></textarea>
+                        <textarea id="textArea" class="textArea"rows="20" cols="20"></textarea>
                     </div>
                 </main>                     
             </main><!--End Main-->
@@ -108,10 +127,10 @@
             </div>
         </footer>
     </div><!--End Dashboard--->
-    <script src="./JavaScript/script.js">
-    </script>
+    <script src="./JavaScript/script.js"></script>
     <script src="./JavaScript/weatherscript.js"></script>
     <script src="JavaScript/unsplashscript.js"></script>
-    
+    <script src="JavaScript/surfscript.js"></script>
+    <script src="./JavaScript/textscript.js"></script>
 </body>
 </html>

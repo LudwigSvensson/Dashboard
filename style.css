@@ -156,15 +156,16 @@ flex-wrap: wrap;
 .search button:hover{
     transform: scale(1.4);
 }
-.weather h1{
+.weather h1, .weather-surf h1{
     font-size: 50px;
     font-weight: 500;
 }
-.weather h2{
+.weather h2, .weather-surf h2{
     font-size: 40px;
     font-weight: 400;
     margin-top: -10px;
 }
+
 .details{
     display: flex;
     align-items: center;
@@ -360,3 +361,4 @@ flex-wrap: wrap;
 .card .textArea{
     padding: 1rem;
 }
+

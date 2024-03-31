@@ -68,11 +68,9 @@ const createLinkElement = (title, url) => {
   return newLink;
 };
 
-
 addLinkBtn.addEventListener('click', () => {
   popuplink.classList.add('active');
 });
-
 
 document.querySelector('.close').addEventListener('click', () => {
     popuplink.classList.remove('active');
@@ -137,5 +135,5 @@ function closePopup() {
 
 
 
-//KOD FÖR VÄDERAPI START
+
 
