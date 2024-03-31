@@ -30,4 +30,14 @@ Det finns absoult saker i detta projekt att utveckla vidare. Här är några exe
 - Kunna se mer än läjets vågor, eventuellt kunna söka likt man kan göra med städerna och vädret.
 - Kunna skriva in ett sökord när man randomisar backgrundsbild för att kunna välja iallafall tema på backgrundsbilden.
 
+  ## Styrkor
+  - **Responsiv design:** Sidan är utformad för att fungera bra på olika skärmstorlekar och enheter, vilket förbättrar användbarheten och tillgängligheten.
+  - **Användning av externa API:er:** Integrationen av väder-API:er och favicons för länkar berikar sidans funktionalitet och ger användaren aktuell information.
+  - **Interaktivitet:** Interaktiva element som möjliggör redigering av titeln på dashboarden, lägga till länkar och skriva anteckningar förbättrar användarupplevelsen och gör sidan mer engagerande.
+
+  ## Brister och förbättringsområden
+  - **Kodupprepning:** Det finns viss kodupprepning i CSS-filen som kan konsolideras för att göra koden mer underhållbar och lättläst.
+  - **Optimering av API-anrop:** API-anropen kan optimeras för att hantera felhantering och förbättra prestanda, särskilt om användaren stöter på problem med att hämta väderinformation eller favicons.
+ 
+
 
