@@ -23,7 +23,7 @@ Ludwigs Dashboard är en webbapplikation som låter användaren skapa snabba ant
 1. Klona projektet från GitHub-repositoriet.
 2. Öppna `index.html` i en webbläsare.
 
-##Resonemang kring projektet och koden.
+## Resonemang kring projektet och koden.
 Det finns absoult saker i detta projekt att utveckla vidare. Här är några exempel: 
 - Kunna spara fler än 5 länkar.
 - Kunna se mer än det mest aktuella vädret.
