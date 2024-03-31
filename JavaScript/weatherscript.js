@@ -52,6 +52,18 @@ async function checkWeather(city){
 
 }
 
-searchBtn.addEventListener("click", ()=>{
-    checkWeather(searchBox.value);
-})
+function loadWeatherFromStorage(){
+  const savedCity = localStorage.getItem("savedCity");
+  if(savedCity){
+      searchBox.value = savedCity;
+      checkWeather(savedCity);
+  }
+}
+
+loadWeatherFromStorage();
+
+searchBtn.addEventListener("click", () => {
+  const city = searchBox.value;
+  localStorage.setItem("savedCity", city); 
+  checkWeather(city);
+});
