@@ -9,6 +9,8 @@
 body{
     background: url(/assets/background3.png);
     background-size: cover;
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
 }
 
 .material-icons-outlined{
@@ -85,6 +87,8 @@ font-size: 35px;
 justify-content: center; 
 border-radius: 45px;
 flex-wrap: wrap;
+
+
 }
 .main-container{
     flex-direction: column;
