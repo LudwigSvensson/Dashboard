@@ -19,7 +19,7 @@ transition: transform 0.3s ease;
 
 }
 
-@-webkit-keyframes shake{
+@keyframes shake{
     from{
         -webkit-transform: rotate(45deg);
     }
@@ -29,7 +29,8 @@ transition: transform 0.3s ease;
         -webkit-transform-origin: center center;         
     }
 }
-@-webkit-keyframes zoom{
+
+@keyframes zoom{
     from{
         transform: scale(1);
     }
@@ -39,7 +40,7 @@ transition: transform 0.3s ease;
     }
 }
 .material-icons-outlined:hover{
-    -webkit-animation: shake .4s ease-in-out .1s infinite alternate;    
+    animation: shake .4s ease-in-out .1s infinite alternate;    
 }
 
 .header{
@@ -249,7 +250,7 @@ height: 60%;
     
 }
 .bi-shuffle:hover{
-    -webkit-animation: zoom .4s ease-in-out .1s infinite alternate;
+    animation: zoom .4s ease-in-out .1s infinite alternate;
 }
 .add-link .add-link-btn:hover{
     background-color: #00000041;
